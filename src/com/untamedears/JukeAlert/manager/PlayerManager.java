@@ -6,7 +6,7 @@ import org.bukkit.entity.Player;
 public class PlayerManager {
 
     public Player[] getPlayers() {
-        return Bukkit.getServer().getOnlinePlayers();
+        return (Player[]) Bukkit.getServer().getOnlinePlayers().toArray();
     }
 
 }
